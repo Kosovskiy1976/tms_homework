@@ -1,2 +1,3 @@
 rootProject.name = 'tms_homework'
+include 'hometask1'
 
