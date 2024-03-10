@@ -5,4 +5,6 @@ findProject(':hometask1:exercise2')?.name = 'exercise2'
 include 'hometask1:exercise3'
 findProject(':hometask1:exercise3')?.name = 'exercise3'
 include 'hometasklesson7'
+include 'hometasklesson8'
+include 'tasklesson8'
 
