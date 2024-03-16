@@ -1,10 +1,16 @@
 public class Patient {
     private int treatmentPlan;
-    private Doctor doc;
+    private Doctor doctor;
+    private String name;
 
-    public Patient(int treatmentPlan) {
+    public Patient(String name, int treatmentPlan) {
+        this.name = name;
         this.treatmentPlan = treatmentPlan;
-        this.doc = null;
+        this.doctor = null;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getTreatmentPlan() {
@@ -12,7 +18,7 @@ public class Patient {
     }
 
     public void setDoc(Doctor doc) {
-        this.doc = doc;
+        this.doctor = doc;
     }
 
 }
