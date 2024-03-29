@@ -1,3 +1,9 @@
 rootProject.name = 'tms_homework'
+include 'hometask1'
+include 'hometask1:exercise2'
+findProject(':hometask1:exercise2')?.name = 'exercise2'
+include 'hometask1:exercise3'
+findProject(':hometask1:exercise3')?.name = 'exercise3'
 include 'hometask3'
-
+include 'hometasklesson7'
+include 'hometasklesson6'
