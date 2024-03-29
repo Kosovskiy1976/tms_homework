@@ -7,4 +7,3 @@ findProject(':hometask1:exercise3')?.name = 'exercise3'
 include 'hometasklesson7'
 include 'hometasklesson8'
 include 'tasklesson8'
-
