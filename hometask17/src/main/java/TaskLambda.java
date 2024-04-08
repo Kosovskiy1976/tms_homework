@@ -8,34 +8,35 @@ public class TaskLambda {
 
 //      Task 1
 
+        String string = "5000 BYN";
+
         Function<String, String> function = (str) -> {
-            Integer sum = Integer.valueOf(str);
+            int i = str.indexOf(" ");
+            String substring = str.substring(0, i);
+            Integer sum = Integer.valueOf(substring);
             Integer sumDollars = sum / 3;
             return sumDollars + " Dollars";
         };
-
-        System.out.println("Enter sum (in BYN):");
-        Scanner scanner = new Scanner(System.in);
-        String string = scanner.next();
 
         System.out.println(function.apply(string));
 
 //        Task 2
         Consumer<String> consumer = (str) -> {
-            Integer sum = Integer.valueOf(str);
+            int i = str.indexOf(" ");
+            String substring = str.substring(0, i);
+            Integer sum = Integer.valueOf(substring);
             Integer sumDollars = sum / 3;
             System.out.println(sumDollars + " Dollars");
         };
         consumer.accept(string);
 
 //        Task 3
-        System.out.println("Enter line:");
-        Scanner scanner1 = new Scanner(System.in);
-        String line = scanner.next();
 
         Supplier<StringBuilder> supplier = () -> {
-            String line1 = line;
-            StringBuilder linerevers = new StringBuilder(line1);
+            System.out.println("Enter line:");
+            Scanner scanner1 = new Scanner(System.in);
+            String line = scanner1.next();
+            StringBuilder linerevers = new StringBuilder(line);
             return linerevers.reverse();
         };
 
