@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>MyPage</title>
+    <meta charset="UTF-8">
+    <meta name="Site" content="test">
+    <link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body class="style1">
+
+<br><h1 style="font-size: 200%"><strong> Запись на курсы </strong><br></h1>
+<hr><br>
+
+<form method="post" action="/user">
+    <div style="padding-bottom: 150px">
+        <p>Имя: <br>
+   <input type="text" name="name">
+    </p>
+    <p>Язык программирования:<Br>
+        <input type="radio" name="lang" value="C++"> C++<Br>
+        <input type="radio" name="lang" value="PHP"> PHP<Br>
+        <input type="radio" name="lang" value="Python"> Python<Br>
+    </p>
+    <p>Дополнительная информация:<Br>
+        <textarea name="inf" cols="50" rows="3"></textarea>
+    </p>
+    <p>Секретное слово:<br>
+        <input type="password" name="pass">
+    </p>
+    </div>
+    <p><input type="submit" value="Отправить">
+        <input type="reset" value="Очистить"></p>
+    </p>
+
+</form>
+
+<hr><br>
+
+</body>
+
+</html>
