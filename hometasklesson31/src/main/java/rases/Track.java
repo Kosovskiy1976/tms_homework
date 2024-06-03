@@ -1,11 +1,10 @@
+package rases;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 
 
@@ -16,6 +15,7 @@ public class Track {
     private List<Horse> horses;
     private final User user;
 
+    @Benchmark
     public User race(List<Horse> horses, User user) {
 
         System.out.println("Which horse are you betting on?");
