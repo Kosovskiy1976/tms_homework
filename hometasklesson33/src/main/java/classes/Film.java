@@ -1,8 +1,11 @@
 package classes;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 
 import java.util.UUID;
 
@@ -11,8 +14,11 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 public class Film {
+
     private String name;
+    @Length(min = 3, message = "description wrong")
     private String description;
+    @Min(value = 1800, message = "year incorrect")
     private Integer yearOfRelease;
     private Boolean viewed;
     private UUID id;

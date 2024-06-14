@@ -1,10 +1,12 @@
 package classes;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +20,7 @@ import java.util.UUID;
 public class FilmServis {
     private final List<Film> films;
 
-    public void add(Film film){
+    public void add(@Valid Film film){
         films.add(film);
     }
 

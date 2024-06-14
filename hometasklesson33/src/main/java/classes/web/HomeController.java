@@ -2,12 +2,12 @@ package classes.web;
 
 import classes.Film;
 import classes.FilmServis;
+import classes.errors.ViewedException;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 import java.util.UUID;
@@ -20,7 +20,7 @@ public class HomeController {
     private final List<Film> films;
 
     @GetMapping("home")
-    public ModelAndView homeGet() {
+    public ModelAndView homeGet(@ModelAttribute(name = "filmmodel") Film film) {
         List<Film> films = filmServis.getAll();
         ModelAndView modelAndView = new ModelAndView("films");
         modelAndView.addObject("films", films);
@@ -28,12 +28,15 @@ public class HomeController {
     }
 
     @PostMapping("home")
-    public ModelAndView homePost(@RequestParam(name = "name") String name,
-                        @RequestParam(name = "description") String description,
-                        @RequestParam(name = "yearOfRelease") Integer yearOfRelease,
-                        @RequestParam(name = "viewed") Boolean viewed) {
-        Film film = new Film(name, description, yearOfRelease, viewed);
-        filmServis.add(film);
+    public ModelAndView homePost(
+    @ModelAttribute(name = "filmmodel") @Valid Film film, BindingResult bindingResult) {
+
+        if (!bindingResult.hasErrors()) {
+            filmServis.add(film);
+        }
+        if (!(film.getViewed() instanceof Boolean)) {
+            throw new ViewedException("Enter true or false in field viewed");
+        }
         ModelAndView modelAndView = new ModelAndView("films");
         modelAndView.addObject("films", films);
         return modelAndView;

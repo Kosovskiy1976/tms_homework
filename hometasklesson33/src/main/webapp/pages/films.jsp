@@ -1,19 +1,24 @@
-
+<%@taglib prefix="sp" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="mes" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
     <title>Bank</title>
 </head>
 <body>
-Add new Film<br>
-<form method="post" action="/home">
-    Name:<input type="text" name="name"><br><br>
-    Description:<input type="text" name="description"><br><br>
-    yearOfRelease:<input type="number" name="yearOfRelease"><br><br>
-    viewed:<input type="text" name="viewed"><br><br>
+<a href="home?lang=en">En</a><br>
+<a href="home?lang=ru">Ru</a><br>
+<br><hr>
+<mes:message code="title"/>
+<br><hr>
+<sp:form method="post" action="/home" modelAttribute="filmmodel">
+    <mes:message code="Name"/>    <sp:input path="name" type="text" name="name"/><br><br>
+    <mes:message code="Description"/> <sp:input path="description" type="text" name="description"/><sp:errors path="description" /> <br><br>
+    <mes:message code="yearOfRelease"/> <sp:input path="yearOfRelease" type="number" name="yearOfRelease"/><sp:errors path="yearOfRelease" /><br><br>
+    <mes:message code="viewed"/> <sp:input path="viewed" type="text" name="viewed"/><br><br>
     <input type="submit" value="save">
-</form>
+</sp:form>
 
 <hr>
 <ul>
