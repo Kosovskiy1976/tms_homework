@@ -17,7 +17,6 @@ import java.util.UUID;
 public class HomeController {
 
     private final FilmServis filmServis;
-    private final List<Film> films;
 
     @GetMapping("home")
     public ModelAndView homeGet(@ModelAttribute(name = "filmmodel") Film film) {
@@ -38,7 +37,7 @@ public class HomeController {
             throw new ViewedException("Enter true or false in field viewed");
         }
         ModelAndView modelAndView = new ModelAndView("films");
-        modelAndView.addObject("films", films);
+        modelAndView.addObject("films", filmServis.getFilms());
         return modelAndView;
     }
 
@@ -47,7 +46,7 @@ public class HomeController {
         UUID id = UUID.fromString(uuid);
         filmServis.delete(id);
         ModelAndView modelAndView = new ModelAndView("films");
-        modelAndView.addObject("films", films);
+        modelAndView.addObject("films", filmServis.getFilms());
         return modelAndView;
     }
 
@@ -70,7 +69,7 @@ public class HomeController {
         Film film = new Film(name, description, yearOfRelease, viewed);
         filmServis.edit(id, film);
         ModelAndView modelAndView = new ModelAndView("films");
-        modelAndView.addObject("films", films);
+        modelAndView.addObject("films", filmServis.getFilms());
         return modelAndView;
     }
 
