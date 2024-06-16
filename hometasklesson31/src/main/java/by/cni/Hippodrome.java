@@ -1,3 +1,5 @@
+package by.cni;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -5,16 +7,15 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Scanner;
 
-
+@Service
 @RequiredArgsConstructor
 public class Hippodrome {
-    @Autowired
-    private Track track;
+
+    private final Track track;
     private final User user;
-    @Autowired
-    private List<Horse> horses;
 
     public void start() {
+
         System.out.println("Enter wallet size:");
         Scanner scanner = new Scanner(System.in);
         Integer wallet = scanner.nextInt();
@@ -23,7 +24,7 @@ public class Hippodrome {
         System.out.println("Five horses at the races");
 
         while (user.getWallet() >= 0) {
-            track.race(horses, user);
+            track.race();
             System.out.println("Your wallet size: " + user.getWallet());
         }
 
