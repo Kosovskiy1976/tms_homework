@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,27 @@ import java.util.Scanner;
 @RequiredArgsConstructor
 public class DataBaseServis {
     private final SessionFactory sessionFactory;
+
+    public PersonEntity findPersonByName(String name) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        PersonEntity personEntity = session.createQuery("from PersonEntity where name=:name", PersonEntity.class)
+                .setParameter("name", name)
+                 .getSingleResult();
+        transaction.commit();
+        session.close();
+        return personEntity;
+    }
+
+    public List<PersonEntity> findPersonByAge(Integer age) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<PersonEntity> persons = session.createQuery("from PersonEntity where age <:age", PersonEntity.class)
+                .setParameter("age", age).list();
+        transaction.commit();
+        session.close();
+        return persons;
+    }
 
     public List<PersonEntity> getAll() {
         Session session = sessionFactory.openSession();

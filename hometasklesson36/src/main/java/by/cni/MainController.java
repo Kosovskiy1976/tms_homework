@@ -4,11 +4,25 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/")
 public class MainController {
     private final DataBaseServis dataBaseServis;
+
+    @GetMapping("find/person")
+    public String find(@RequestParam(name = "name") String name) {
+        PersonEntity personByName = dataBaseServis.findPersonByName(name);
+        return "";
+    }
+
+    @GetMapping("person/age")
+    public String findPerson(@RequestParam(name = "age") Integer age) {
+        List<PersonEntity> persons = dataBaseServis.findPersonByAge(age);
+        return "";
+    }
 
     @GetMapping("del/oder")
     public String del(@RequestParam(name = "id") int id) {

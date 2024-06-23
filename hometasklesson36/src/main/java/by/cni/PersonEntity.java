@@ -18,6 +18,7 @@ public class PersonEntity {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private Integer age;
     private String surname;
     @CreationTimestamp
     private Date createDate;
