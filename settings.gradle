@@ -9,6 +9,8 @@ include 'hometasklesson3'
 include 'hometasklesson6'
 include 'hometasklesson7'
 include 'hometasklesson8'
+include 'tasklesson8'
+include 'hometasklesson27'
 include 'hometasklesson9'
 include 'hometasklesson10'
 include 'hometasklesson11'
@@ -22,11 +24,12 @@ include 'hometasklesson18'
 include 'hometasklesson20'
 include 'hometasklesson22'
 include 'hometasklesson23'
+include 'hometasklesson31'
 include 'hometasklesson26'
 include 'hometasklesson28'
 include 'hometasklesson29'
-
-
 include 'hometasklesson30'
+include 'hometasklesson35'
+
 include 'hometasklesson36'
 
