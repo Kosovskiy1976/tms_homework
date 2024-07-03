@@ -1,0 +1,477 @@
+Index: settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>rootProject.name = 'tms_homework'\r\ninclude 'hometask1'\r\ninclude 'hometask1:exercise2'\r\nfindProject(':hometask1:exercise2')?.name = 'exercise2'\r\ninclude 'hometask1:exercise3'\r\nfindProject(':hometask1:exercise3')?.name = 'exercise3'\r\ninclude 'hometask2'\r\ninclude 'hometask3'\r\ninclude 'hometasklesson7'\r\ninclude 'hometasklesson8'\r\ninclude 'tasklesson8'\r\nmaster\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/settings.gradle b/settings.gradle
+--- a/settings.gradle	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/settings.gradle	(date 1716140555552)
+@@ -9,4 +9,8 @@
+ include 'hometasklesson7'
+ include 'hometasklesson8'
+ include 'tasklesson8'
+-master
++include 'master'
++include 'hometasklesson22'
++include 'hometasklesson27'
++include 'hometasklesson28'
++
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+deleted file mode 100644
+--- a/.idea/uiDesigner.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,124 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Palette2">
+-    <group name="Swing">
+-      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+-      </item>
+-      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
+-        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+-        <initial-values>
+-          <property name="text" value="Button" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="RadioButton" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="CheckBox" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="Label" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+-          <preferred-size width="-1" height="20" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+-      </item>
+-    </group>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: hometasklesson22/settings.gradle
+===================================================================
+diff --git a/hometasklesson22/settings.gradle b/hometasklesson22/settings.gradle
+deleted file mode 100644
+--- a/hometasklesson22/settings.gradle	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,2 +0,0 @@
+-rootProject.name = 'hometasklesson22'
+-
+Index: hometasklesson22/src/main/java/MyServlet.java
+===================================================================
+diff --git a/hometasklesson22/src/main/java/MyServlet.java b/hometasklesson22/src/main/java/MyServlet.java
+deleted file mode 100644
+--- a/hometasklesson22/src/main/java/MyServlet.java	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,31 +0,0 @@
+-import jakarta.servlet.ServletConfig;
+-import jakarta.servlet.ServletException;
+-import jakarta.servlet.http.HttpServlet;
+-import jakarta.servlet.http.HttpServletRequest;
+-import jakarta.servlet.http.HttpServletResponse;
+-
+-import java.io.IOException;
+-import java.io.PrintWriter;
+-import java.util.Date;
+-
+-public class MyServlet extends HttpServlet {
+-    @Override
+-    public void init(ServletConfig config) throws ServletException {
+-        System.out.println("INIT");
+-        super.init(config);
+-    }
+-
+-    @Override
+-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+-        System.out.println("SERVIS");
+-        super.service(req, resp);
+-    }
+-
+-    @Override
+-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+-        Date date = new Date();
+-
+-        PrintWriter writer = resp.getWriter();
+-        writer.println("Now is " + date);
+-    }
+-}
+Index: hometasklesson22/src/main/webapp/WEB-INF/web.xml
+===================================================================
+diff --git a/hometasklesson22/src/main/webapp/WEB-INF/web.xml b/hometasklesson22/src/main/webapp/WEB-INF/web.xml
+deleted file mode 100644
+--- a/hometasklesson22/src/main/webapp/WEB-INF/web.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,18 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+-                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+-         version="4.0">
+-
+-    <servlet>
+-        <servlet-name>My</servlet-name>
+-        <servlet-class>MyServlet</servlet-class>
+-    </servlet>
+-
+-    <servlet-mapping>
+-        <servlet-name>My</servlet-name>
+-        <url-pattern>/my</url-pattern>
+-    </servlet-mapping>
+-
+-</web-app>
+\ No newline at end of file
+Index: tms_homework/.idea/.gitignore
+===================================================================
+diff --git a/tms_homework/.idea/.gitignore b/tms_homework/.idea/.gitignore
+deleted file mode 100644
+--- a/tms_homework/.idea/.gitignore	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/gradle.xml
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+deleted file mode 100644
+--- a/.idea/gradle.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ /dev/null	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
+@@ -1,23 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="GradleMigrationSettings" migrationVersion="1" />
+-  <component name="GradleSettings">
+-    <option name="linkedExternalProjectsSettings">
+-      <GradleProjectSettings>
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleHome" value="" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$" />
+-            <option value="$PROJECT_DIR$/hometask1" />
+-            <option value="$PROJECT_DIR$/hometask1/exercise2" />
+-            <option value="$PROJECT_DIR$/hometask1/exercise3" />
+-            <option value="$PROJECT_DIR$/hometasklesson7" />
+-            <option value="$PROJECT_DIR$/hometasklesson8" />
+-            <option value="$PROJECT_DIR$/tasklesson8" />
+-          </set>
+-        </option>
+-      </GradleProjectSettings>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'java'\r\n}\r\n\r\ngroup = 'org.example'\r\nversion = '1.0-SNAPSHOT'\r\n\r\nrepositories {\r\n    mavenCentral()\r\n}\r\n\r\ndependencies {\r\n    testImplementation platform('org.junit:junit-bom:5.9.1')\r\n    testImplementation 'org.junit.jupiter:junit-jupiter'\r\n}\r\n\r\ntest {\r\n    useJUnitPlatform()\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/build.gradle	(date 1716047179619)
+@@ -1,15 +1,26 @@
+ plugins {
++    id 'war'
+     id 'java'
+ }
+ 
+-group = 'org.example'
+-version = '1.0-SNAPSHOT'
++group 'org.example'
++version '1.0-SNAPSHOT'
+ 
+ repositories {
+     mavenCentral()
++    mavenCentral()
+ }
+ 
+ dependencies {
++    compileOnly group: 'jakarta.servlet', name: 'jakarta.servlet-api', version: '6.0.0'
++    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
++    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
++    compileOnly 'org.projectlombok:lombok:1.18.32'
++    annotationProcessor 'org.projectlombok:lombok:1.18.32'
++    testImplementation 'junit:junit:4.11'
++    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
++    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
++    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+     testImplementation platform('org.junit:junit-bom:5.9.1')
+     testImplementation 'org.junit.jupiter:junit-jupiter'
+ }
+Index: tms_homework/settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>rootProject.name = 'tms_homework'\r\ninclude 'hometask1'\r\ninclude 'hometask1:exercise2'\r\nfindProject(':hometask1:exercise2')?.name = 'exercise2'\r\ninclude 'hometask1:exercise3'\r\nfindProject(':hometask1:exercise3')?.name = 'exercise3'\r\ninclude 'hometask2'\r\ninclude 'hometask3'\r\ninclude 'hometasklesson7'\r\ninclude 'hometasklesson8'\r\ninclude 'tasklesson8'\r\nmaster\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tms_homework/settings.gradle b/tms_homework/settings.gradle
+--- a/tms_homework/settings.gradle	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/tms_homework/settings.gradle	(date 1716047179628)
+@@ -1,12 +1,0 @@
+-rootProject.name = 'tms_homework'
+-include 'hometask1'
+-include 'hometask1:exercise2'
+-findProject(':hometask1:exercise2')?.name = 'exercise2'
+-include 'hometask1:exercise3'
+-findProject(':hometask1:exercise3')?.name = 'exercise3'
+-include 'hometask2'
+-include 'hometask3'
+-include 'hometasklesson7'
+-include 'hometasklesson8'
+-include 'tasklesson8'
+-master
+Index: tms_homework/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tms_homework/.idea/misc.xml b/tms_homework/.idea/misc.xml
+--- a/tms_homework/.idea/misc.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/tms_homework/.idea/misc.xml	(date 1716047179601)
+@@ -1,7 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: tms_homework/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tms_homework/.idea/vcs.xml b/tms_homework/.idea/vcs.xml
+--- a/tms_homework/.idea/vcs.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/tms_homework/.idea/vcs.xml	(date 1716047179611)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: tms_homework/.idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/hometask1\" />\r\n            <option value=\"$PROJECT_DIR$/hometask1/exercise2\" />\r\n            <option value=\"$PROJECT_DIR$/hometask1/exercise3\" />\r\n            <option value=\"$PROJECT_DIR$/hometasklesson7\" />\r\n            <option value=\"$PROJECT_DIR$/hometasklesson8\" />\r\n            <option value=\"$PROJECT_DIR$/tasklesson8\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tms_homework/.idea/gradle.xml b/tms_homework/.idea/gradle.xml
+--- a/tms_homework/.idea/gradle.xml	(revision 99e6bd8b126f06735b8c018e94b23536ebf6d188)
++++ b/tms_homework/.idea/gradle.xml	(date 1716047179591)
+@@ -4,14 +4,52 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$/../hometasklesson18" />
++        <option name="gradleHome" value="" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/../hometasklesson18" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$/../hometasklesson20" />
++        <option name="gradleHome" value="" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/../hometasklesson20" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$/../hometasklesson22" />
++        <option name="gradleHome" value="" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/../hometasklesson22" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$/../tasklesson21" />
+         <option name="gradleHome" value="" />
+         <option name="modules">
+           <set>
++            <option value="$PROJECT_DIR$/../tasklesson21" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="modules">
++          <set>
+             <option value="$PROJECT_DIR$" />
+             <option value="$PROJECT_DIR$/hometask1" />
+             <option value="$PROJECT_DIR$/hometask1/exercise2" />
+             <option value="$PROJECT_DIR$/hometask1/exercise3" />
++            <option value="$PROJECT_DIR$/hometask2" />
++            <option value="$PROJECT_DIR$/hometask3" />
++            <option value="$PROJECT_DIR$/hometasklesson18" />
+             <option value="$PROJECT_DIR$/hometasklesson7" />
+             <option value="$PROJECT_DIR$/hometasklesson8" />
+             <option value="$PROJECT_DIR$/tasklesson8" />

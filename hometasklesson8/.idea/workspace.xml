@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19e12ef1-9455-49fe-b570-9df576ba2f80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hometask3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson10/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson10/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson10/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson10/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/hometasklesson13/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/hometasklesson13/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/hometasklesson13/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson11/hometasklesson13/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson12/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson12/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson13/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson13/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson13/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hometasklesson13/gradlew.bat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="hometasklesson12" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2eMl1aCzunQJx8cQAa8Dd0C1Chg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "HomeTaskLesson8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user123/IdeaProjects/tms_homework/tasklesson8"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-azul-17.0.10-f644763e9732-59acb15f" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19e12ef1-9455-49fe-b570-9df576ba2f80" name="Changes" comment="" />
+      <created>1711722113947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711722113947</updated>
+    </task>
+    <servers />
+  </component>
+</project>

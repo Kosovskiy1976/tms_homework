@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: hometasklesson38
+app:
+  name: andrew
+  surname: www

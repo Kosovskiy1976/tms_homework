@@ -5,6 +5,7 @@ plugins {
 
 task("my_task").doLast{
     println "hello"
+
 }
 
 group = 'org.example'
@@ -15,13 +16,22 @@ repositories {
 }
 
 dependencies {
+
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.14.0'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
+
+    implementation 'commons-io:commons-io:2.16.1'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 test {
     useJUnitPlatform()
+
 }
+
+
 

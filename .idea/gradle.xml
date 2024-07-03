@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/hometask1" />
             <option value="$PROJECT_DIR$/hometask1/exercise2" />
             <option value="$PROJECT_DIR$/hometask1/exercise3" />
+            <option value="$PROJECT_DIR$/hometasklesson1" />
+            <option value="$PROJECT_DIR$/hometasklesson10" />
+            <option value="$PROJECT_DIR$/hometasklesson11" />
+            <option value="$PROJECT_DIR$/hometasklesson12" />
+            <option value="$PROJECT_DIR$/hometasklesson13" />
+            <option value="$PROJECT_DIR$/hometasklesson14" />
+            <option value="$PROJECT_DIR$/hometasklesson15" />
+            <option value="$PROJECT_DIR$/hometasklesson16" />
+            <option value="$PROJECT_DIR$/hometasklesson17" />
+            <option value="$PROJECT_DIR$/hometasklesson18" />
+            <option value="$PROJECT_DIR$/hometasklesson2" />
+            <option value="$PROJECT_DIR$/hometasklesson20" />
+            <option value="$PROJECT_DIR$/hometasklesson22" />
+            <option value="$PROJECT_DIR$/hometasklesson23" />
+            <option value="$PROJECT_DIR$/hometasklesson3" />
+            <option value="$PROJECT_DIR$/hometasklesson6" />
             <option value="$PROJECT_DIR$/hometasklesson7" />
             <option value="$PROJECT_DIR$/hometasklesson8" />
-            <option value="$PROJECT_DIR$/tasklesson8" />
+            <option value="$PROJECT_DIR$/hometasklesson9" />
           </set>
         </option>
       </GradleProjectSettings>
