@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th:="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/my.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter the order parameters:<br><br>
+<form th:action="@{/order}" method="post">
+    name:<input type="text" name="name"><br><br>
+    price:<input type="number" name="price"><br><br>
+    quantity:<input type="number" name="quantity"><br><br>
+    <input type="submit" value="Add">
+</form>
+<br>
+<hr>
+<form th:action="@{/order/search}" method="post">
+    Enter name for searching:<input type="text" name="search"><input type="submit" value="search">
+
+</form>
+<hr>
+<br>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+    <tr th:each="ord: ${orders}">
+        <div th:if="${ord.getDeleted().equals('no')}">
+            <td th:text="${ord.name}"></td>
+            <td th:text="${ord.price}"></td>
+            <td th:text="${ord.quantity}"></td>
+            <td><a th:href="@{/order/edit(id=${ord.getId()})}">edit</a></td>
+            <td><a th:href="@{/order(id=${ord.getId()}, deleted=${ord.getDeleted()})}">delete</a></td>
+        </div>
+        <div th:if="${ord.getDeleted().equals('yes')}" >
+            <td th:text="${ord.name}" class="mycolor"></td>
+        <td th:text="${ord.price}" class="mycolor"></td>
+        <td th:text="${ord.quantity}" class="mycolor"></td>
+        <td><a th:href="@{/order/edit(id=${ord.getId()})}">edit</a></td>
+        <td><a th:href="@{/order(id=${ord.getId()}, deleted=${ord.getDeleted()})}">delete</a></td>
+        <td th:if="${ord.getDeleted().equals('yes')}">
+            <a th:href="@{/order(id=${ord.getId()}, deleted=${ord.getDeleted()})}">return to cart</a>
+        </td>
+        </div>
+
+    </tr>
+
+</table>
+</body>
+</html>

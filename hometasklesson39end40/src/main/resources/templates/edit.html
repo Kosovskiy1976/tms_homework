@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th:="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Edit the order parameters:<br><br>
+<form th:action="@{/order/edit(id=${order.getId()})}" method="post">
+  name:<input type="text" name="name" th:value="${order.getName()}"><br><br>
+  price:<input type="number" name="price" th:value="${order.getPrice()}"><br><br>
+  quantity:<input type="number" name="quantity" th:value="${order.getQuantity()}"><br><br>
+  <input type="submit" value="Save">
+</form>
+</body>
+</html>
