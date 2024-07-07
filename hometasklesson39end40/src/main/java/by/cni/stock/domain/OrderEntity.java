@@ -23,5 +23,6 @@ public class OrderEntity {
     @CreationTimestamp
     private LocalDateTime time;
     private String deleted;
+    private Boolean delivered;
 
 }
