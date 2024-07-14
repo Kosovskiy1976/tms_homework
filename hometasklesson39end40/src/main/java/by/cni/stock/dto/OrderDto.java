@@ -14,4 +14,5 @@ public class OrderDto {
     private Integer price;
     private Integer quantity;
     private String deleted;
+    private Boolean delivered;
 }

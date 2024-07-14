@@ -51,7 +51,7 @@ public class OrderController {
 
     @PostMapping("/search")
     public String search(SearchDto dto, Model model) {
-        var result = orderServis.findByName(dto);
+        var result = orderServis.search(dto);
         model.addAttribute("orders", result);
         return "home";
     }
