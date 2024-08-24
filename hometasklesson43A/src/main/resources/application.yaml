@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bl_bikes_db
+    username: postgres
+    password: Ichbin
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+  jpa:
+    show-sql: true
+server:
+  port: 8081
